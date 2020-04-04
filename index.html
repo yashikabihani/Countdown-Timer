@@ -64,7 +64,7 @@ body {
 <div class="header">
   <a href="#default" class="logo">Countdown Timer</a>
   <div class="header-right">
-    <a class="active" href="#home">Create an Event</a>
+    <a class="active" href="#home" onclick="createEvent()">Create an Event</a>
     <a href="#list">List Events</a>
   </div>
 </div>
@@ -75,5 +75,11 @@ body {
   <p>Counting days, hours, minutes and seconds for an event!</p>
 </div>
 
+<script>
+  function createEvent() {
+    window.location = '/create.html'
+  }
+</script>
+  
 </body>
 </html>
